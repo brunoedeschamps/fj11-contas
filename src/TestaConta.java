@@ -10,7 +10,17 @@ public class TestaConta {
 		c1.depositar(500);
 		
 		System.out.println(c1.getSaldo());
+		
+		ContaCorrente cc = new ContaCorrente(1200);
+		cc.setTitular("Cliente 2");
+		cc.sacar(30);
+		System.out.println(cc.getSaldo());
+		
+		
+		ContaPoupanca cp = new ContaPoupanca(1200);
+		cp.setTitular("Cliente 3");
+		cp.sacar(30);
+		System.out.println(cp.getSaldo());
+		
 	}
-
-
 }
