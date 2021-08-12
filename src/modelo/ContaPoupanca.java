@@ -1,4 +1,4 @@
-
+package modelo;
 public class ContaPoupanca extends Conta {
 
 	public ContaPoupanca() {
@@ -6,15 +6,17 @@ public class ContaPoupanca extends Conta {
 		// TODO Auto-generated constructor stub
 	}
 
-	public ContaPoupanca(double saldo) {
-		super(saldo);
+	public ContaPoupanca(double valor) {
+		super();
+		super.depositar(valor);
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
-	public void sacar(double valor) {
-		// TODO Auto-generated method stub
-		super.sacar(valor);
+	public String getTipo() {
+		return "Conta Poupança";
+		
 	}
 
-}
+
+	}
+
