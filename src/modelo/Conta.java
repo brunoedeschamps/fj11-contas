@@ -2,11 +2,19 @@ package modelo;
 
 public abstract class Conta {
 	
+	public static int qtd_conta = 0;
+	
+	
 	private double saldo;
 	private String Titular;
 	private int numero;
 	private String agencia;
+		
 	
+	public Conta() {
+		qtd_conta++;
+	}
+
 	public void sacar(double valor) {
 		saldo = saldo - valor;
 	}

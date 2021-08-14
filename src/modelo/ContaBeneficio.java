@@ -6,4 +6,10 @@ public class ContaBeneficio extends Conta {
 		
 	}
 
+	@Override
+	public String toString() {
+		return "Conta Beneficio N°: " + getNumero()
+		;
+	}
+
 }

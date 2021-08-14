@@ -23,6 +23,6 @@ public class ContaCorrente extends Conta implements Tributavel{
 
 	@Override
 	public double getValorImposto() {
-		return 0;
+		return getSaldo() * 0.01;
 	}
 }
